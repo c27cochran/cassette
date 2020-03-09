@@ -1,0 +1,33 @@
+export default {
+  COLORS: {
+    DEFAULT: '#DCDCDC',
+    PRIMARY: '#230444',
+    SECONDARY: '#F5F4B6',
+    LABEL: '#ee8572',
+    INFO: '#00BCD4',
+    ERROR: '#F44336',
+    SUCCESS: '#29c7ac',
+    WARNING: '#FF9800',
+    MUTED: '#979797',
+    INPUT: '#DCDCDC',
+    // ACTIVE: '#90303d',
+    ACTIVE: '#230444',
+    BUTTON_COLOR: '#84142d',
+    BUTTON_COLOR_ALTERNATE: '#018383',
+    PLACEHOLDER: '#9FA5AA',
+    SWITCH_ON: '#29c7ac',
+    SWITCH_OFF: '#D4D9DD',
+    GRADIENT_START: '#150429',
+    GRADIENT_END: '#48047d',
+    PRICE_COLOR: '#EAD5FB',
+    BORDER_COLOR: '#E7E7E7',
+    BLOCK: '#E7E7E7',
+    CAPTION: '#4A4A4A',
+    TEXT: '#353535',
+  },
+  SIZES: {
+    BLOCK_SHADOW_RADIUS: 2,
+    // BASE: 36,
+    INPUT_TEXT: 18,
+  }
+};
