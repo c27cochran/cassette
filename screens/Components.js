@@ -15,7 +15,7 @@ import { Select, Icon, Header, Product, Switch, Tabs } from '../components/';
 
 const { width } = Dimensions.get('screen');
 
-const thumbMeasure = (width - 48 - 32) / 3;
+const thumbMeasure = (width - 48 - 32) / 2;
 const cardWidth = width - (theme.SIZES.BASE * 2);
 const categories = [
   {
@@ -55,7 +55,7 @@ export default class Components extends React.Component {
           <Image resizeMode='cover' style={styles.productImage} source={{ uri: item.image }} />
           <Block center style={{ paddingHorizontal: theme.SIZES.BASE }}>
             <Text center size={16} color={theme.COLORS.MUTED} style={styles.productPrice}>$125</Text>
-            <Text center size={34}>{item.title}</Text>
+            <Text center size={34}>{item.title} - Test</Text>
             <Text center size={16} color={theme.COLORS.MUTED} style={styles.productDescription}>{item.description}</Text>
           </Block>
         </Block>

@@ -39,7 +39,7 @@ export default class SignIn extends React.Component {
   };
 
   onLoginSuccess = () => {
-    this.setState({ loading: false });
+    // this.setState({ loading: false });
     this.props.navigation.navigate('App');
   };
 
@@ -196,7 +196,7 @@ export default class SignIn extends React.Component {
         {
           !loading &&
             <Block flex middle>
-              <StatusBar barStyle="light-content" />
+              {/*<StatusBar barStyle="light-content" />*/}
               <KeyboardAvoidingView behavior="padding" enabled>
                 <Block flex middle style={{marginTop: theme.SIZES.BASE * 3}}>
                   <Text color="white" style={{fontFamily: 'Damion'}} size={75}>

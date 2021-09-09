@@ -20,11 +20,12 @@ import CategoryScreen from "../screens/Category";
 import ProductScreen from "../screens/Product";
 import GalleryScreen from "../screens/Gallery";
 import ChatScreen from "../screens/Chat";
-
 import CartScreen from "../screens/Cart";
+
 import SignInScreen from "../screens/SignIn";
 import SignUpScreen from "../screens/SignUp";
 import PasswordResetScreen from "../screens/PasswordReset";
+import GenresScreen from "../screens/Genres";
 
 import SearchScreen from "../screens/Search";
 import ComponentsScreen from "../screens/Components";
@@ -232,6 +233,7 @@ export default function OnboardingStack(props) {
       <Stack.Screen name="Sign Up" component={SignUpScreen} />
       <Stack.Screen name="Sign In" component={SignInScreen} />
       <Stack.Screen name="Password Reset" component={PasswordResetScreen} />
+      <Stack.Screen name="Genres" component={GenresScreen} />
     </Stack.Navigator>
   );
 }

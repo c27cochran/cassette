@@ -42,7 +42,8 @@ function CustomDrawerContent({
     "New Collection",
     "Profile",
     "Settings",
-    "Components"
+    "Components",
+    "Genres"
   ];
   const fbUser = firebase.auth().currentUser;
   const handleLogout = () => {

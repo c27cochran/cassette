@@ -8,17 +8,12 @@ const { height, width } = Dimensions.get('screen');
 import materialTheme from '../constants/Theme';
 import Images from '../constants/Images';
 import {Icon} from "../components";
-import {LinearGradient} from "expo-linear-gradient";
 
 export default class Onboarding extends React.Component {
   componentDidMount() {
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
-        console.log('user logged in', user.email);
-        // this.props.navigation.navigate('App');
-      } else {
-        console.log('no user');
-        // this.setState({ loading: false });
+        this.props.navigation.navigate('App');
       }
     });
   }
@@ -28,7 +23,7 @@ export default class Onboarding extends React.Component {
 
     return (
       <Block flex style={styles.container}>
-        <StatusBar barStyle="light-content" />
+        {/*<StatusBar barStyle="light-content" />*/}
         <Block flex center>
           <ImageBackground
             source={Images.Onboarding}

@@ -98,7 +98,7 @@ export default class App extends React.Component {
         <NavigationContainer>
           <GalioProvider theme={materialTheme}>
             <Block flex>
-              {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
+              {Platform.OS === 'ios' && <StatusBar barStyle="dark-content" />}
               <Screens />
             </Block>
           </GalioProvider>
